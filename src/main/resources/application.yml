@@ -1,0 +1,21 @@
+server:
+  port: 80
+  undertow:
+    accesslog:
+      # 开启Undertow访问日志
+      pattern: '%h %l %u %t "%r" %s %b %D'
+      enabled: true 
+      dir: /data/logs
+management:
+  port: ${server.port}
+  security:
+    enabled: false
+spring:
+# 禁用jmx
+  jmx:
+    enabled: false
+#  jersey:
+#    application-path: /v1
+swagger:
+  headers: appid,version
+  defaults: appid,2.0.0

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo-jersey
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      force-request: true
+      force-response: true
+info:
+  component: jersey-rest-demo
+  author: zhao.weiwei
+  description: jersey和swagger的restDemo示例
